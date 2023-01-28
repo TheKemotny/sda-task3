@@ -184,7 +184,7 @@ public class LoopTasks {
         while (!isDone){
             ++whileCounter;
             modulosCounter = 0;
-            while (modulosCounter != modulos.length || !isDivisibleByModulos){
+            while (modulosCounter != modulos.length && !isDivisibleByModulos){
                 if(whileCounter % modulos[modulosCounter] == 0){
                     isDivisibleByModulos = true;
                 }
@@ -257,6 +257,6 @@ public class LoopTasks {
     }
 
     public static void main(String[] args) {
-        taskTenWhileLoop(11);
+        taskEightWhileLoop();
     }
 }
