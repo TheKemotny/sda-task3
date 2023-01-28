@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class OneDimensionalArrays {
+public class OneDimensionalArrayTasks {
 
     public static void printArray(int[] arrayToPrint){
         for(int number: arrayToPrint){
