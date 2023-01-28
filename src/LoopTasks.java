@@ -124,8 +124,8 @@ public class LoopTasks {
     }
 
     public static void taskSevenForLoop(){
-        String resultModulo3ButNot5 = "Podzielna przez 3:\t";
-        String resultModulo5ButNot3 = "Podzielna przez 5:\t";
+        String resultModulo3ButNot5 = "Divisible by 3:\t";
+        String resultModulo5ButNot3 = "Divisible by 5:\t";
         for(int i = 1; i < 101; i++){
             if(i % 3 == 0 && i % 5 != 0){
                 resultModulo3ButNot5 = resultModulo3ButNot5.concat(i + "\t");
@@ -138,8 +138,8 @@ public class LoopTasks {
     }
 
     public static void taskSevenWhileLoop(){
-        String resultModulo3ButNot5 = "Podzielna przez 3:\t";
-        String resultModulo5ButNot3 = "Podzielna przez 5:\t";
+        String resultModulo3ButNot5 = "Divisible by 3:\t";
+        String resultModulo5ButNot3 = "Divisible by 5:\t";
         boolean isDone = false;
         int counter = 0;
         while (!isDone){
@@ -178,22 +178,22 @@ public class LoopTasks {
         boolean isDone = false;
         int whileCounter = 0;
         int max = 0;
-        int modulosCounter = 0;
-        boolean isDivisibleByModulos = false;
-        int[] modulos = {2,3,5,7};
+        int moduloArrayCounter;
+        boolean isDivisibleByModulo = false;
+        int[] moduloArray = {2,3,5,7};
         while (!isDone){
             ++whileCounter;
-            modulosCounter = 0;
-            while (modulosCounter != modulos.length && !isDivisibleByModulos){
-                if(whileCounter % modulos[modulosCounter] == 0){
-                    isDivisibleByModulos = true;
+            moduloArrayCounter = 0;
+            while (moduloArrayCounter != moduloArray.length && !isDivisibleByModulo){
+                if(whileCounter % moduloArray[moduloArrayCounter] == 0){
+                    isDivisibleByModulo = true;
                 }
-                modulosCounter++;
+                moduloArrayCounter++;
             }
-            if(!isDivisibleByModulos && max < whileCounter){
+            if(!isDivisibleByModulo && max < whileCounter){
                 max = whileCounter;
             }
-            isDivisibleByModulos = false;
+            isDivisibleByModulo = false;
             if(whileCounter == 1000){
                 isDone = true;
             }
@@ -232,16 +232,16 @@ public class LoopTasks {
     }
 
     public static void taskTenWhileLoop(int number){
-        int mudoloCounter = 1;
+        int moduloCounter = 1;
         int numberCounter = 2;
         String result = "Number " + number + " is ";
         boolean isPrime = true;
         boolean isOutOfNumber = false;
         while(isPrime && !isOutOfNumber){
             if(number % numberCounter == 0){
-                mudoloCounter++;
+                moduloCounter++;
             }
-            if(mudoloCounter == 3){
+            if(moduloCounter == 3){
                 isPrime = false;
             }
             if(++numberCounter == number){
