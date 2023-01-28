@@ -257,6 +257,5 @@ public class LoopTasks {
     }
 
     public static void main(String[] args) {
-        taskEightWhileLoop();
     }
 }
