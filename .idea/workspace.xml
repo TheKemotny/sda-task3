@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c2f73b0-3054-4d1b-b062-c4244b7a8513" name="Changes" comment="+zadania z tablic jednowymiarowych">
+    <list default="true" id="4c2f73b0-3054-4d1b-b062-c4244b7a8513" name="Changes" comment="+pierwsze zadanie trudne">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ConversionSystemOfNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TowerOfHanoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +38,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,12 +93,20 @@
       <option name="project" value="LOCAL" />
       <updated>1674911035721</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="+zadania z tablic jednowymiarowych">
+      <created>1674911600395</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674911600395</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+zadania z petli" />
     <MESSAGE value="+zadania z tablic jednowymiarowych" />
-    <option name="LAST_COMMIT_MESSAGE" value="+zadania z tablic jednowymiarowych" />
+    <MESSAGE value="+pierwsze zadanie trudne" />
+    <option name="LAST_COMMIT_MESSAGE" value="+pierwsze zadanie trudne" />
   </component>
 </project>
