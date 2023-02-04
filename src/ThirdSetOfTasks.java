@@ -35,7 +35,7 @@ public class ThirdSetOfTasks {
     }
 
     public static String printStrings(String... strings){
-        String result = new String();
+        String result = "";
         for(String sentence: strings){
             result = result.concat(sentence);
         }
@@ -129,26 +129,11 @@ public class ThirdSetOfTasks {
             b = integerArrayList.get(i + 1);
             System.out.print("LINE " + (i / 2) + ": ");
             switch (result){
-                default -> {
-                    System.out.print(a + " " + b);
-                    break;
-                }
-                case 1 ->{
-                    System.out.print(a + " + " + b + " = " +  addNumbers(a, b));
-                    break;
-                }
-                case 2 ->{
-                    System.out.print(a + " - " + b + " = " +  subtractNumbers(a, b));
-                    break;
-                }
-                case 3 ->{
-                    System.out.print(a + " * " + b + " = " +  multipleNumber(a, b));
-                    break;
-                }
-                case 4 ->{
-                    System.out.print(a + " / " + b + " = " +  divideNumbers(a, b));
-                    break;
-                }
+                default -> System.out.print(a + " " + b);
+                case 1 -> System.out.print(a + " + " + b + " = " +  addNumbers(a, b));
+                case 2 -> System.out.print(a + " - " + b + " = " +  subtractNumbers(a, b));
+                case 3 -> System.out.print(a + " * " + b + " = " +  multipleNumber(a, b));
+                case 4 -> System.out.print(a + " / " + b + " = " +  divideNumbers(a, b));
             }
             System.out.println();
         }
@@ -183,7 +168,7 @@ public class ThirdSetOfTasks {
 
     public static void taskEight(String fileName, String word){
         File file = new File(fileName);
-        String line = new String();
+        String line;
         try {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNext()){
@@ -213,27 +198,63 @@ public class ThirdSetOfTasks {
         }
     }
 
-    public static void taskNine(){
+    public static void taskTen(){
         int x = getNumberFromUserWithMessage("X OF POINT 1");
         int y = getNumberFromUserWithMessage("Y OF POINT 1");
         Point pointOne = new Point(x,y);
         x = getNumberFromUserWithMessage("X OF NUMBER 2");
         y = getNumberFromUserWithMessage("Y OF NUMBER 2");
         Point pointTwo = new Point(x,y);
-        writeToFile("output.txt", String.valueOf(pointTwo.distanceBetweenPoints(pointOne)));
+        writeToFile("files/output.txt", String.valueOf(pointTwo.distanceBetweenPoints(pointOne)));
+    }
+
+    public static void taskNine(){
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> stringArrayList = new ArrayList<>();
+        boolean isDone = false;
+        String result;
+        System.out.println("SAFE WORD: DEAD-BEEF");
+        do{
+            result = scanner.next();
+            stringArrayList.add(result);
+            if(result.contains("DEAD-BEEF")){
+                isDone = true;
+            }
+        }while (!isDone);
+        writeToFile("src/outputTwo.txt", stringArrayList.toArray(new String[0]));
+    }
+
+    public static void taskEleven(){
+        Scanner scanner = new Scanner(System.in);
+        boolean isDone = false;
+        int result;
+        int sum = 0;
+        System.out.println("ENTER 0 TO EXIT");
+        int counter = 0;
+        do{
+            result = getNumberFromUserWithMessage("ENTER " + counter + " NUMBER: ");
+            sum += result;
+            counter++;
+            if(result == 0){
+                isDone = true;
+            }
+        }while (!isDone);
+        double average = (double) sum / counter;
+        writeToFile("src/outputThree.txt", String.valueOf(average));
     }
 
 
     public static void main(String[] args) {
-        taskOne();
-        taskTwo();
-        taskThree();
-        taskFour();
-        taskFive();
-        String fileName = "src/inputForFive.txt";
-        taskSix(fileName);
-        System.out.println("WORDS IN FILE: " + taskSeven(fileName));
-        taskEight(fileName, "1");
-        taskNine();
+//        taskOne();
+//        taskTwo();
+//        taskThree();
+//        taskFour();
+//        taskFive();
+//        String fileName = "src/inputForFive.txt";
+//        taskSix(fileName);
+//        System.out.println("WORDS IN FILE: " + taskSeven(fileName));
+//        taskEight(fileName, "1");
+//        taskNine();
+        taskEleven();
     }
 }
