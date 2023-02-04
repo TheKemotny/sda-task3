@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c2f73b0-3054-4d1b-b062-c4244b7a8513" name="Changes" comment="+pierwsze zadanie trudne">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConversionSystemOfNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TowerOfHanoi.java" afterDir="false" />
+    <list default="true" id="4c2f73b0-3054-4d1b-b062-c4244b7a8513" name="Changes" comment="+tower of hanoi">
+      <change afterPath="$PROJECT_DIR$/src/TSP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -42,6 +40,20 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SDAZadanka27Styczen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,13 +112,36 @@
       <option name="project" value="LOCAL" />
       <updated>1674911600395</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="+tower of hanoi">
+      <created>1675013844538</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675013844538</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+zadania z petli" />
     <MESSAGE value="+zadania z tablic jednowymiarowych" />
     <MESSAGE value="+pierwsze zadanie trudne" />
-    <option name="LAST_COMMIT_MESSAGE" value="+pierwsze zadanie trudne" />
+    <MESSAGE value="+tower of hanoi" />
+    <option name="LAST_COMMIT_MESSAGE" value="+tower of hanoi" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/TSP.java</url>
+          <line>5</line>
+          <properties class="TSP" method="minTravelCost">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
