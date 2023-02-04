@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c2f73b0-3054-4d1b-b062-c4244b7a8513" name="Changes" comment="+tower of hanoi">
-      <change afterPath="$PROJECT_DIR$/src/TSP.java" afterDir="false" />
+    <list default="true" id="4c2f73b0-3054-4d1b-b062-c4244b7a8513" name="Changes" comment="+ tsp">
+      <change afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThirdSetOfTasks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/inputForFive.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675013844538</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="+ tsp">
+      <created>1675502928796</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675502928796</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,21 +135,7 @@
     <MESSAGE value="+zadania z tablic jednowymiarowych" />
     <MESSAGE value="+pierwsze zadanie trudne" />
     <MESSAGE value="+tower of hanoi" />
-    <option name="LAST_COMMIT_MESSAGE" value="+tower of hanoi" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/TSP.java</url>
-          <line>5</line>
-          <properties class="TSP" method="minTravelCost">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="+ tsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ tsp" />
   </component>
 </project>
