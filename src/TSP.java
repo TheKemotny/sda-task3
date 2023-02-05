@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class TSP {
-    static int V = 4;
 
     int minTravelCost(int[][] graph) {
+        int V = graph.length;
         boolean[] visited = new boolean[V];
         for (int i = 0; i < V; i++) {
             visited[i] = false;
